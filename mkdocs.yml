@@ -3,10 +3,8 @@ INHERIT: /etc/mkdocs.root.yml
 nav:
   - Overview: index.md
   - Examples:
-      - examples/index.md
       - examples/quick-start.md
   - Guides:
-      - guides/index.md
       - Getting Started: guides/getting-started.md
   - API Docs: api
 
