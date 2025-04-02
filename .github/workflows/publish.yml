@@ -37,22 +37,20 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2.0.1
+      # NOTE: we need the Node setup because the Bun setup doesn't support Node v22
+      - name: Setup Node
+        uses: actions/setup-node@4.3.0
         with:
           registry-url: 'https://registry.npmjs.org'
           scope: '@studiokeywi'
 
       - name: Install dependencies
-        run: bun i
-
-      - run: bun -v
-      - run: node -v
+        run: npm i
 
       - name: Run tests
         run: bun tests
 
       - env:
-          BUN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         name: Publish to NPMJS
-        run: bun publish
+        run: npm publish
