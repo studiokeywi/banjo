@@ -1,7 +1,6 @@
-name:
-  Deploy new version to NPMJS
+name: Deploy new version to NPMJS
 
-  # Allows you to run this workflow manually from the Actions tab
+# Allows you to run this workflow manually from the Actions tab
 on:
   workflow_dispatch:
     inputs:
@@ -45,7 +44,7 @@ jobs:
           scope: '@studiokeywi'
 
       - name: Install dependencies
-        run: bun i --frozen-lockfile
+        run: bun i
 
       - name: Run tests
         run: bun tests
