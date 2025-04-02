@@ -39,7 +39,7 @@ jobs:
           submodules: recursive
 
       - name: Setup Bun
-        uses: actions/setup-bun@v2.0.1
+        uses: oven-sh/setup-bun@v2.0.1
         with:
           registry-url: 'https://registry.npmjs.org'
           scope: '@studiokeywi'
