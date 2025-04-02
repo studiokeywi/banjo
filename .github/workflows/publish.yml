@@ -48,7 +48,7 @@ jobs:
         run: npm i
 
       - name: Run tests
-        run: bun tests
+        run: npx bun tests
 
       - env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
