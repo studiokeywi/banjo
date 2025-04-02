@@ -33,7 +33,7 @@ jobs:
           submodules: recursive
 
       - name: Run studioKeywi repo docs
-        uses: studiokeywi/repo-docs@v4.0.1
+        uses: studiokeywi/repo-docs@v4.0.2
         with:
           args: build
 
