@@ -1,5 +1,4 @@
 [Bun]: https:bun.sh/
-[Bun's auto importing]: https://bun.sh/docs/runtime/autoimport
 [Electron]: https://www.electronjs.org/
 [Tauri]: https://tauri.app/
 [TypeDoc]: https://typedoc.org/
@@ -33,8 +32,6 @@ bun add @studiokeywi/banjo
 # or
 bun add -D @studiokeywi/banjo
 ```
-
-Or simply use it in your projects and let [Bun's auto importing] take over
 
 ### Deno
 
