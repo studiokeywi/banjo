@@ -1,6 +1,6 @@
 api/
 dist/
-docs/assets
+**/docs/assets
 node_modules/
 public/
 reports/
