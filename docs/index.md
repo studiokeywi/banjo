@@ -48,7 +48,7 @@
 
 ## Quick Start
 
-Check out the [quick start](./examples/quick-start.md) in the [examples](./examples/index.md) section of the docs.
+Check out the [quick start](./examples/quick-start.md) in the examples section of the docs.
 
 ## Features
 

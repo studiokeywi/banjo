@@ -157,7 +157,7 @@ Under the hood, Banjo's game loop utilizes `requestAnimationFrame`. This means w
 
 The render function should handle whatever logic your game requires to display the game. This could involve using the `<canvas>` element, manipulating DOM elements, or more based on your project structure. For now, we'll create a simple HUD using a `<div>` to render engine data.
 
-!!! tip "`render` is passed a `delta` value representing the elapsed time since the last frame
+!!! tip "`render` is passed a `delta` value representing the elapsed time since the last frame"
 
 ### The `update` function
 
