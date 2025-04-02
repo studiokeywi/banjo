@@ -43,7 +43,7 @@ describe('bootstrap (function)', () => {
     const valid = await bootstrap({ assets: { images: ['./test/test.png'] } });
     expect(valid.images['./test/test.png']).toBeInstanceOf(HTMLImageElement);
     await expect(() => bootstrap({ assets: { images: ['./invalid.bmp'] } })).rejects.toMatchObject(
-      new Error(`ENOENT: no such file or directory, lstat '${join(process.cwd(), 'invalid.bmp')}'`)
+      new Error(`ENOENT: no such file or directory, lstat '${join(process.env.PWD, 'invalid.bmp')}'`)
     );
   });
 });
