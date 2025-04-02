@@ -1,7 +1,6 @@
 // @vitest-environment happy-dom
 import { bootstrap } from '#🪕/bootstrap';
 import { lstat } from 'node:fs';
-import { join, resolve } from 'node:path';
 import { beforeAll, describe, expect, it } from 'vitest';
 
 const mockRefreshRate = (refreshRate: number) => {
@@ -42,8 +41,6 @@ describe('bootstrap (function)', () => {
   it('loads requested images as HTMLImageElements', async () => {
     const valid = await bootstrap({ assets: { images: ['./test/test.png'] } });
     expect(valid.images['./test/test.png']).toBeInstanceOf(HTMLImageElement);
-    await expect(() => bootstrap({ assets: { images: ['./invalid.bmp'] } })).rejects.toMatchObject(
-      new Error(`ENOENT: no such file or directory, lstat '${resolve(process.cwd(), 'invalid.bmp')}'`)
-    );
+    await expect(() => bootstrap({ assets: { images: ['./invalid.bmp'] } })).rejects.toEqual(new Error("The file './invalid.bmp' was not found"));
   });
 });

@@ -65,8 +65,8 @@ const loadImage = (src: string): Promise<HTMLImageElement> => {
   ele.addEventListener('load', () => {
     resolve(ele);
   });
-  ele.addEventListener('error', evt => {
-    reject(evt.error);
+  ele.addEventListener('error', () => {
+    reject(new Error(`The file '${src}' was not found`));
   });
   ele.src = src;
   return image;
