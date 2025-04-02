@@ -1,0 +1,34 @@
+{
+  "customCss": "typedoc.css",
+  "darkHighlightTheme": "solarized-dark",
+  "disableSources": true,
+  "entryPoints": ["lib"],
+  "entryPointStrategy": "expand",
+  "excludeInternal": true,
+  "excludeReferences": true,
+  "externalSymbolLinkMappings": {
+    "typescript": {
+      "Disposable": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html#using-declarations-and-explicit-resource-management",
+      "EventTarget": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget",
+      "KeyboardEvent": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent"
+    }
+  },
+  "includeHierarchySummary": false,
+  "includeVersion": true,
+  "lightHighlightTheme": "solarized-light",
+  "navigationLinks": {
+    "Banjo Docs": "https://studiokeywi.github.io/banjo",
+    "Banjo NPMJS": "https://npmjs.com/package/@studiokeywi/banjo",
+    "Banjo Repo": "https://github.studiokeywi.dev/banjo"
+  },
+  "out": "api",
+  "sidebarLinks": {
+    "Banjo Docs": "https://studiokeywi.github.io/banjo",
+    "Banjo NPMJS": "https://npmjs.com/package/@studiokeywi/banjo",
+    "Banjo Repo": "https://github.studiokeywi.dev/banjo"
+  },
+  "sourceLinkExternal": true,
+  "titleLink": "https://studiokeywi.github.io/banjo",
+  "tsconfig": "./tsconfig.base.json",
+  "useFirstParagraphOfCommentAsSummary": true
+}

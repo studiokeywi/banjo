@@ -1,0 +1,5 @@
+{
+  "cSpell.words": ["AABB", "chrono", "chronos", "lerp", "voronoi"],
+  "npm.packageManager": "bun",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

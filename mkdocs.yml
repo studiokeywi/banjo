@@ -1,0 +1,34 @@
+INHERIT: /etc/mkdocs.root.yml
+
+nav:
+  - Overview: index.md
+  - Examples:
+      - examples/index.md
+      - examples/quick-start.md
+  - Guides:
+      - guides/index.md
+      - Getting Started: guides/getting-started.md
+  - API Docs: api
+
+plugins:
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: false
+      enabled: true
+  - search
+  - typedoc:
+      source: ./lib
+      output_dir: ./api
+      tsconfig: ./tsconfig.json
+      options: ./typedoc.json
+      name: '@studiokeywi/banjo'
+      title_link: /banjo
+
+repo_url: 'https://github.com/studiokeywi/banjo'
+site_dir: 'public'
+site_name: '@studiokeywi/banjo'
+site_url: 'https://studiokeywi.github.io/banjo'
+
+watch:
+  - lib

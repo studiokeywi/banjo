@@ -1,0 +1,10 @@
+api/
+dist/
+docs/assets
+node_modules/
+public/
+reports/
+
+# stryker temp files
+.stryker-tmp
+stryker.log

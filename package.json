@@ -1,0 +1,49 @@
+{
+  "name": "@studiokeywi/banjo",
+  "description": "The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, Bun, TypeDoc, and TypeScript.",
+  "version": "0.0.1",
+  "author": "studioKeywi <dev@studiokeywi.dev> (https://studiokeywi.dev/)",
+  "homepage": "https://studiokeywi.github.io/banjo",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": "./lib/index.ts",
+    "./*": "./lib/*.ts"
+  },
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@happy-dom/global-registrator": "^17.4.4",
+    "@stryker-mutator/vitest-runner": "^8.7.1",
+    "@types/bun": "^1.2.8",
+    "@vitest/coverage-v8": "^3.1.1",
+    "@vitest/ui": "^3.1.1",
+    "bun": "^1.2.8",
+    "eslint": "^9.23.0",
+    "happy-dom": "^17.4.4",
+    "prettier": "^3.5.3",
+    "typedoc": "^0.28.1",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0",
+    "vitest": "^3.1.1"
+  },
+  "imports": {
+    "#🪕": "./lib/index.ts",
+    "#🪕/*": "./lib/*.ts"
+  },
+  "scripts": {
+    "api-docs": "typedoc",
+    "coverage": "vitest --coverage",
+    "stryker": "stryker run",
+    "tests": "vitest --coverage && stryker run",
+    "vitest": "vitest"
+  },
+  "repository": {
+    "directory": "banjo",
+    "type": "git",
+    "url": "github:studiokeywi/banjo"
+  }
+}

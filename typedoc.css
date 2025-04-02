@@ -1,0 +1,39 @@
+body,
+html {
+  font-size: 16px;
+}
+
+code:not([class]) {
+  padding: 0.125rem 0.5rem;
+}
+
+.fancy details {
+  border: solid 0.0625rem var(--color-accent);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  transition: all 0.35s ease-in-out;
+  transition-behavior: allow-discrete;
+
+  &:hover:open {
+    border-color: var(--color-focus-outline);
+  }
+
+  &:hover {
+    border-color: var(--color-focus-outline);
+  }
+
+  &:open {
+    border-color: var(--color-document);
+  }
+
+  & summary {
+    &::marker {
+      content: '🪕';
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

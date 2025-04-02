@@ -1,0 +1,5 @@
+{
+  "compilerOptions": { "allowJs": true, "checkJs": true, "rootDir": "." },
+  "extends": "./tsconfig.base.json",
+  "include": ["./*.config.m?s", "./*.config.?s", "./.excludes.js", "examples", "lib", "test"]
+}
