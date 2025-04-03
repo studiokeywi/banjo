@@ -1,8 +1,8 @@
-# Getting started with Banjo
+# Getting Started with Banjo
 
 !!! abstract "In this guide, you'll go from a new directory to the `quick start` example Banjo project"
 
-## Project setup
+## Project Setup
 
 ```shell
 bun init
@@ -153,19 +153,19 @@ Now that you have a working skeleton, you can start using Banjo features. Let's 
 
 Under the hood, Banjo's game loop utilizes `requestAnimationFrame`. This means we can attempt to target the user's monitor refresh rate for maximum FPS, and provide developers with a customizable target for game ticks (or updates) per second. Both the `render` and `update` functions are passed a `delta` value in milliseconds.
 
-### The `render` function
+### The `render` Function
 
 The render function should handle whatever logic your game requires to display the game. This could involve using the `<canvas>` element, manipulating DOM elements, or more based on your project structure. For now, we'll create a simple HUD using a `<div>` to render engine data.
 
 !!! tip "`render` is passed a `delta` value representing the elapsed time since the last frame"
 
-### The `update` function
+### The `update` Function
 
 The update function should handle whatever logic is required to change the state of the game. For now, we'll use it to grab the current engine state.
 
 !!! tip "`update` is passed a `delta` value equal to `1 / (TPS * 1_000)` (the duration of one "tick" based on the provided TPS value, converted to milliseconds)"
 
-## Running the engine
+## Running the Engine
 
 If you have been running your code after each change (or using Bun's `--watch` mode to restart automatically), you'll notice that nothing is actually updating on the page. This is because the engine needs to be started first. We advise using patterns to start, stop, or pause/unpause the engine based on browser ready state and whether it has focus:
 
@@ -254,7 +254,7 @@ If you have been running your code after each change (or using Bun's `--watch` m
     --8<-- "examples/quick-start/server.ts"
     ```
 
-### What about pausing?
+### What About Pausing?
 
 Pausing the engine does not stop its internal loop; it only prevents the update and render callbacks from being executed. So you may be wondering how you can detect/display the paused state of the engine from outside of the render and update loops? This seems like a good use case for a `Watcher`:
 
@@ -358,7 +358,7 @@ Pausing the engine does not stop its internal loop; it only prevents the update 
     --8<-- "examples/quick-start/server.ts"
     ```
 
-## Final touches
+## Final Touches
 
 While technically a full Banjo project, this is still a little... basic. Our final step for this guide will be introducing a "bouncing ball" animation. It's still pretty simple, but it shows how easily Banjo features can be combined to obtain desired behavior:
 

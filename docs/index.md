@@ -1,14 +1,22 @@
 [Bun]: https:bun.sh/
 [Electron]: https://www.electronjs.org/
+[Material for MkDocs]: https://squidfunk.github.io/mkdocs-material/
 [Tauri]: https://tauri.app/
 [TypeDoc]: https://typedoc.org/
 [TypeScript]: https://typescriptlang.org/
 
 # @studiokeywi/banjo
 
-!!! abstract "The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, [Bun], [TypeDoc], and [TypeScript]."
+!!! abstract "The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, [Bun], and [TypeScript]."
+
+![NPM Version](https://img.shields.io/npm/v/@studiokeywi/banjo)
+![NPM Type Definitions](https://img.shields.io/npm/types/@studiokeywi/banjo)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@studiokeywi/banjo)
+![NPM License](https://img.shields.io/npm/l/@studiokeywi/banjo)
 
 `@studiokeywi/banjo` is a TypeScript game framework meant to be run in the browser or a similar web view (such as through [Electron] or [Tauri]) through the build process of your choice. While dependency free, `banjo` expects to have access to browser-provided functionality such as the `cancelAnimationFrame`/`requestAnimationFrame` functions, the `HTMLImageElement`/`Image` objects, and the `<canvas>` element. If you can provide these where your code will run, then `banjo` should run there as well!
+
+!!! "These docs are powered by [Material for MkDocs] and [TypeDoc]"
 
 - 🚫 Dependency Free  
   studioKeywi wants you to have confidence that the code we provide doesn't rely on outside vectors. We may not be the best choice, but we believe we are a transparent choice when it comes to understanding our functionality.
@@ -48,7 +56,7 @@
 
 ## Quick Start
 
-Check out the [quick start](./examples/quick-start.md) in the examples section of the docs.
+Check out the [quick start](./examples/quick-start.md) in the examples section of the docs for a project that demonstrates Banjo in under 150 lines of code
 
 ## Features
 

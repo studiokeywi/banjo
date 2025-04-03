@@ -1,4 +1,6 @@
-This is a simple `banjo` example project using Bun. All of these files can all be found within the [`quick-start` examples folder of the GitHub repo](https://github.com/studiokeywi/banjo/tree/primary/examples/quick-start). Use `cd examples/quick-start && bun server.ts` to run the project:
+# Quick Start
+
+This is a simple `banjo` example project using Bun. All of these files can all be found within the [`quick-start` examples folder of the GitHub repo](https://github.com/studiokeywi/banjo/tree/primary/examples/quick-start). You can clone the repo, open a shell in the `examples/quick-start` folder, then use `bun server.ts` to run:
 
 === "quick-start/index.html"
 

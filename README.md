@@ -1,7 +1,7 @@
+[Banjo Docs]: https://studiokeywi.github.io/banjo
 [Bun]: https:bun.sh/
 [Electron]: https://www.electronjs.org/
 [Tauri]: https://tauri.app/
-[TypeDoc]: https://typedoc.org/
 [TypeScript]: https://typescriptlang.org/
 [API Documentation]: https://studiokeywi.github.io/banjo/api
 [Examples]: https://studiokeywi.github.io/banjo/examples
@@ -9,7 +9,12 @@
 
 # @studiokeywi/banjo
 
-> The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, [Bun], [TypeDoc], and [TypeScript].
+> The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, [Bun], and [TypeScript].
+
+![NPM Version](https://img.shields.io/npm/v/@studiokeywi/banjo)
+![NPM Type Definitions](https://img.shields.io/npm/types/@studiokeywi/banjo)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@studiokeywi/banjo)
+![NPM License](https://img.shields.io/npm/l/@studiokeywi/banjo)
 
 `@studiokeywi/banjo` is a TypeScript game framework meant to be run in the browser or a similar web view (such as through [Electron] or [Tauri]) through the build process of your choice. While dependency free, `banjo` expects to have access to browser-provided functionality such as the `cancelAnimationFrame`/`requestAnimationFrame` functions, the `HTMLImageElement`/`Image` objects, and the `<canvas>` element. If you can provide these where your code will run, then `banjo` should run there as well!
 
@@ -51,6 +56,7 @@ npm install -D @studiokeywi/banjo
 
 ## Additional Links
 
+- [Banjo Docs]
 - [API Documentation]
 - [Examples]
 - [Guides]

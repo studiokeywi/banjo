@@ -1,12 +1,13 @@
 {
   "name": "@studiokeywi/banjo",
-  "description": "The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, Bun, TypeDoc, and TypeScript.",
+  "description": "The fast and plucky game framework from studioKeywi 🪕 Zero dependencies 🪕 Tree shakeable exports 🪕 Built with ❤️, Bun, and TypeScript.",
   "version": "0.0.1",
   "author": "studioKeywi <dev@studiokeywi.dev> (https://studiokeywi.dev/)",
   "homepage": "https://studiokeywi.github.io/banjo",
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
+  "module": "./lib/index.ts",
   "exports": {
     ".": "./lib/index.ts",
     "./*": "./lib/*.ts"

@@ -3,9 +3,11 @@ INHERIT: /etc/mkdocs.root.yml
 nav:
   - Overview: index.md
   - Examples:
+      - examples/index.md
       - examples/quick-start.md
   - Guides:
-      - Getting Started: guides/getting-started.md
+      - guides/index.md
+      - guides/getting-started.md
   - API Docs: api
 
 plugins:
