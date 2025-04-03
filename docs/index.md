@@ -16,7 +16,7 @@
 
 `@studiokeywi/banjo` is a TypeScript game framework meant to be run in the browser or a similar web view (such as through [Electron] or [Tauri]) through the build process of your choice. While dependency free, `banjo` expects to have access to browser-provided functionality such as the `cancelAnimationFrame`/`requestAnimationFrame` functions, the `HTMLImageElement`/`Image` objects, and the `<canvas>` element. If you can provide these where your code will run, then `banjo` should run there as well!
 
-!!! "These docs are powered by [Material for MkDocs] and [TypeDoc]"
+!!! info "These docs are powered by [Material for MkDocs] and [TypeDoc]"
 
 - 🚫 Dependency Free  
   studioKeywi wants you to have confidence that the code we provide doesn't rely on outside vectors. We may not be the best choice, but we believe we are a transparent choice when it comes to understanding our functionality.
