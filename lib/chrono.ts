@@ -1,5 +1,5 @@
 /**
- * A helper format to make it easier to translate different resolutions of time (such as milliseconds, minutes, and days) across `banjo` functions
+ * A helper format to make it easier to translate different resolutions of time (such as milliseconds, minutes, and days) across Banjo functions
  *
  * @module chrono
  * @author studioKeywi */

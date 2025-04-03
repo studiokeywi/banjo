@@ -1,5 +1,5 @@
 /**
- * Information about `banjo` itself
+ * Information about Banjo itself
  *
  * @module index
  * @author studioKeywi */

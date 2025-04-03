@@ -1,6 +1,8 @@
 # Quick Start
 
-This is a simple `banjo` example project using Bun. All of these files can all be found within the [`quick-start` examples folder of the GitHub repo](https://github.com/studiokeywi/banjo/tree/primary/examples/quick-start). You can clone the repo, open a shell in the `examples/quick-start` folder, then use `bun server.ts` to run:
+This example, using Bun, demonstrates Banjo in under 125 lines of code. All of these files can all be found within the [`quick-start` examples folder of the GitHub repo](https://github.com/studiokeywi/banjo/tree/primary/examples/quick-start). You can clone the repo, open a shell in the `examples/quick-start` folder, then use `bun server.ts` to run:
+
+!!! info "Bun is not a requirement to use Banjo. It's just our favorite way to prototype and build"
 
 === "quick-start/index.html"
 
